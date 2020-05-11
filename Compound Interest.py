@@ -22,4 +22,4 @@ p = int(input("Principal: "))
 def A(p,r,n):
     print("Your compounded interest for the first, second and third year is ",",", p * (1+(r/n))**nt[0],",",p * (1+(r/n))**nt[1],",",p * (1+(r/n))**nt[2], "respectively")
     
-print("The value of your savings for ",nt," years is ","$" + format(A(p,r,n),",.2f"), " on compounded interest")2
+print("The value of your savings for ",nt," years is ","$" + format(A(p,r,n),",.2f"), " on compounded interest")
