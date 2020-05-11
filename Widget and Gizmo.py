@@ -11,8 +11,21 @@ import random
 print("Buy your Gizmo and Widget at Viraculous store")
 wigdet_weight = 75
 gizmo_weight = 112
-no_of_widget_ordered = int(input("order your widget: "))
-no_of_gizmo_ordered = int(input("order your gizmo: "))
+
+#Error handling
+try:
+    no_of_widget_ordered = float(input("order your widget: "))
+except ValueError:
+    print("Error...numbers only. Retry")
+    quit()
+
+try:
+    no_of_gizmo_ordered = float(input("order your gizmo: "))
+except ValueError:
+        print("Error...numbers only. Retry")
+        quit()
+
+#This is the total weight of gizmo and widget ordered respectively       
 order_weight_of_gizmo = gizmo_weight * no_of_gizmo_ordered
 order_weight_of_widget = wigdet_weight * no_of_widget_ordered
 
